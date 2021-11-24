@@ -20,8 +20,12 @@ create table product (
 
 insert into category(name) value ('Kahvia');
 insert into category(name) value ('Erinlaista kahvia');
+insert into category(name) value ('Teet');
+insert into category(name) value ('Oheistuotteet');
 
-insert into product(name, price, image, category_id) values ('Testi kahvi', 10,'kahvi12.jpg', 1);
-insert into product(name, price, image, category_id) values ('Testi kahvi2', 20, 'kahvi12.jpg', 1);
-insert into product(name, price, image, category_id) values ('Ernu kahvi', 10,'kahvi12.jpg', 2);
-insert into product(name, price, image, category_id) values ('Spessu kahvi2', 20, 'kahvi12.jpg', 2);
+
+insert into product(name, price, image, category_id) values ('La Golondrina', 10,'kahvi12.jpg', 1);
+insert into product(name, price, image, category_id) values ('Eleta', 20, 'kahvi5.jpg', 1);
+insert into product(name, price, image, category_id) values ('Kicking Horse', 10,'kahvi7.jpg', 2);
+insert into product(name, price, image, category_id) values ('Tempter', 20, 'kahvi8.jpg', 2);
+insert into product(name, price, image, category_id) values ('Lipton tee', 20, 'tee1.jpg', 2);
