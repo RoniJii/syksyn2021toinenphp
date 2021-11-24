@@ -18,14 +18,23 @@ create table product (
     on delete restrict
 );
 
-insert into category(name) value ('Kahvia');
-insert into category(name) value ('Erinlaista kahvia');
-insert into category(name) value ('Teet');
-insert into category(name) value ('Oheistuotteet');
 
 
-insert into product(name, price, image, category_id) values ('La Golondrina', 10,'kahvi12.jpg', 1);
-insert into product(name, price, image, category_id) values ('Eleta', 20, 'kahvi5.jpg', 1);
-insert into product(name, price, image, category_id) values ('Kicking Horse', 10,'kahvi7.jpg', 2);
-insert into product(name, price, image, category_id) values ('Tempter', 20, 'kahvi8.jpg', 2);
-insert into product(name, price, image, category_id) values ('Lipton tee', 20, 'tee1.jpg', 2);
+insert into category(name) value ('Kahvi');
+insert into category(name) value ('Tee');
+insert into category(name) value ('Muut');
+
+insert into product(name, price, image, category_id) values ('Joulukahvi', 10, 'Kahvi1.jpg', 1);
+insert into product(name, price, image, category_id) values ('Tummapaahto luomukahvi', 12, 'Kahvi2.jpg', 1);
+insert into product(name, price, image, category_id) values ('Suklaakahvi', 9, 'Kahvi3.jpg', 1);
+insert into product(name, price, image, category_id) values ('Karamellikahvi', 11, 'Kahvi4.jpg', 1);
+insert into product(name, price, image, category_id) values ('Appelsiinikahvi', 13, 'Kahvi55.jpg', 1);
+insert into product(name, price, image, category_id) values ('Chai', 5, 'Tee11.jpg', 2);
+insert into product(name, price, image, category_id) values ('Musta tee', 3, 'Tee2.jpg', 2);
+insert into product(name, price, image, category_id) values ('Kofeiiniton musta tee', 4, 'Tee3.jpg', 2);
+insert into product(name, price, image, category_id) values ('Vihreä tee', 3, 'Tee4.jpg', 2);
+insert into product(name, price, image, category_id) values ('Rooibos', 5, 'Tee5.jpg', 2);
+insert into product(name, price, image, category_id) values ('Inkivääri vihreä tee', 5, 'Tee6jpg', 2);
+insert into product(name, price, image, category_id) values ('Sininen terälehti tee', 6, 'Tee7.jpg', 2);
+insert into product(name, price, image, category_id) values ('Vanha kahvimylly', 20, 'Kahvimylly1.jpg', 3);
+insert into product(name, price, image, category_id) values ('Uusi kahvimylly', 25, 'Kahvimylly2.jpg', 3);
