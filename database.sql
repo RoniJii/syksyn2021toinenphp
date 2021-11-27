@@ -18,10 +18,9 @@ create table product (
     on delete restrict
 );
 
-insert into category(name) value ('Kahvia');
-insert into category(name) value ('Erinlaista kahvia');
-insert into category(name) value ('Teet');
-insert into category(name) value ('Oheistuotteet');
+insert into category(name) value ('Kahvi');
+insert into category(name) value ('Tee');
+insert into category(name) value ('Muut');
 
 
 insert into product(name, price, image, category_id) values ('La Golondrina', 10,'kahvi12.jpg', 1);
