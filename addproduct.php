@@ -9,14 +9,9 @@ $price = filter_var($input->price,FILTER_SANITIZE_STRING);
 $image = filter_var($input->image,FILTER_SANITIZE_STRING);
 $category = filter_var($input->category,FILTER_SANITIZE_STRING);
 
-
-// tää on sitten sen input kenttä
-
 try {
     $db = openDb();
-    //taulunnimi(sarakkeen) valaues (:tuo filter:var yläpuolella oleva luentaan tähän) 
     $query = $db->prepare('insert into product(name, price, image, category_id) values (:name, :price, :image, :category)');
-                    //kaksoispiste on paikka mihin laiteataan, muuttujassa teksti mitä laitetataan
     $query->bindValue(':name', $name,PDO::PARAM_STR);
     $query->bindValue(':price', $price,PDO::PARAM_STR);
     $query->bindValue(':image', $image,PDO::PARAM_STR);
