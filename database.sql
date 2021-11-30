@@ -38,3 +38,5 @@ insert into product(name, price, image, category_id) values ('Inkivääri vihre�
 insert into product(name, price, image, category_id) values ('Sininen terälehti tee', 6, 'Tee7.jpg', 2);
 insert into product(name, price, image, category_id) values ('Vanha kahvimylly', 20, 'Kahvimylly1.jpg', 3);
 insert into product(name, price, image, category_id) values ('Uusi kahvimylly', 25, 'Kahvimylly2.jpg', 3);
+insert into product(name, price, image, category_id) values ('Koffie', 4, 'Kahvi100.jpg', 3);
+insert into product(name, price, image, category_id) values ('Douwe Egberts', 4, 'Kahvi101.jpg', 3);
