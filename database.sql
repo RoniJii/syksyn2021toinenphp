@@ -41,3 +41,8 @@ insert into product(name, price, image, category_id) values ('Uusi kahvimylly', 
 insert into product(name, price, image, category_id) values ('Koffie', 4, 'Kahvi100.jpg', 3);
 insert into product(name, price, image, category_id) values ('Douwe Egberts', 4, 'Kahvi101.jpg', 3);
 insert into product(name, price, image, category_id) values ('Lipton Peach and Mango', 3, 'Tee19.jpg', 2);
+insert into product(name, price, image, category_id) values ('Klassinen kahvimuki', 3, 'kahvimuki.jpg', 2);
+insert into product(name, price, image, category_id) values ('Ruusu teekannu', 3, 'teekannu.jpg', 2);
+insert into product(name, price, image, category_id) values ('Klassinen teekannu', 3, 'teekannu1.jpg', 2);
+insert into product(name, price, image, category_id) values (' Ruusuinen teekuppi', 3, 'teekuppi.jpg', 2);
+insert into product(name, price, image, category_id) values ('Klassinen teekuppi', 3, 'teekuppi1.jpg', 2);
