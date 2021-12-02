@@ -40,3 +40,4 @@ insert into product(name, price, image, category_id) values ('Vanha kahvimylly',
 insert into product(name, price, image, category_id) values ('Uusi kahvimylly', 25, 'Kahvimylly2.jpg', 3);
 insert into product(name, price, image, category_id) values ('Koffie', 4, 'Kahvi100.jpg', 3);
 insert into product(name, price, image, category_id) values ('Douwe Egberts', 4, 'Kahvi101.jpg', 3);
+insert into product(name, price, image, category_id) values ('Lipton Peach and Mango', 3, 'Tee19.jpg', 2);
