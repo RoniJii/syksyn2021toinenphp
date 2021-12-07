@@ -1,10 +1,9 @@
 <?php
-require_once('inc/headers.php');
+require_once('headers.php');
 require_once('inc/functions.php');
 
 echo "ja tänne lisäilyt sitten";
 
-$input = json_decode(file_get_contents(''));
 $fname = filter_var($input->firstname,FILTER_SANITIZE_STRING);
 $lname = filter_var($input->lastname,FILTER_SANITIZE_STRING);
 $address = filter_var($input->address,FILTER_SANITIZE_STRING);
@@ -45,4 +44,19 @@ $db->commit();
 
 
 
+}
+$input = json_decode(file_get_contents('php://input'));
+$category = filter_var($input->category,FILTER_SANITIZE_STRING);
+
+try {
+    $db = openDb();
+    $query = $db->prepare('insert into category(name) values (:category)');
+    $query->bindValue(':category',$category,PDO::PARAM_STR);
+    $query->execute();
+
+    header('HTTP/1.1 200 OK');
+   $data = array('id' => $db->lastInsertId(), 'category' => $category);
+   print json_encode($data);
+   } catch (PDOException $pdoex) {
+         returnError($pdoex);
 }
