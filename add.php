@@ -1,8 +1,6 @@
 <?php
-require_once('headers.php');
+require_once('inc/headers.php');
 require_once('inc/functions.php');
-
-echo "ja tänne lisäilyt sitten";
 
 $fname = filter_var($input->firstname,FILTER_SANITIZE_STRING);
 $lname = filter_var($input->lastname,FILTER_SANITIZE_STRING);
@@ -42,9 +40,17 @@ foreach ($cart as $product) {
 
 $db->commit();
 
+header('HTTP/1.1 200 OK');
+$data = array('id' => $customer_id);
+echo json_encode($data);
 
+} catch(PDOException $pdoex) {
+
+    $db->rollback();
+    returnError($pdoex);
 
 }
+
 $input = json_decode(file_get_contents('php://input'));
 $category = filter_var($input->category,FILTER_SANITIZE_STRING);
 
