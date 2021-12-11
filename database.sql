@@ -19,6 +19,15 @@ create table product (
 );
 
 
+create table customer (
+    id int primary key auto_increment,
+    firstname varchar(50) not null,
+    lastname varchar(50) not null,
+    address varchar(50) not null,
+    zip varchar(10) not null,
+    city varchar(30) not null
+);
+
 create table `order` (
 	id int primary key auto_increment,
 	order_date timestamp DEFAULT current_timestamp,
