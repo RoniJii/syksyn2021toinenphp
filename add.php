@@ -2,6 +2,7 @@
 require_once('inc/headers.php');
 require_once('inc/functions.php');
 
+$input = json_decode(file_get_contents('php://input'));
 $fname = filter_var($input->firstname,FILTER_SANITIZE_STRING);
 $lname = filter_var($input->lastname,FILTER_SANITIZE_STRING);
 $address = filter_var($input->address,FILTER_SANITIZE_STRING);
@@ -50,4 +51,3 @@ echo json_encode($data);
     returnError($pdoex);
 
 }
-
